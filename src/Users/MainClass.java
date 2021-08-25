@@ -13,12 +13,18 @@ public class MainClass {
 
         myData.setState(States.UNACTIVE);
         myData.setAge(bornDate);
+        myData.setPhone("8408-5460");
+        myData.setEmail("dannyjimenez118@gmail.com");
         System.out.print(myData);
 
 
         friendData.setState(States.SUSPENDED);
         friendData.setAge(27, 8, 1997);
+        friendData.setPhone("8888-8l88");
+        friendData.setEmail("2l@eti@gmail.net");
         System.out.println(friendData);
+
+
 
 
     }

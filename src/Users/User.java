@@ -156,7 +156,7 @@ public class User {
     }
 
     public void setPhone(String phone) {
-        Pattern P1 = Pattern.compile("([\\d]{4}).([\\d]{4})");
+        Pattern P1 = Pattern.compile("([\\d]{4})-([\\d]{4})");
         Matcher M1 = P1.matcher(phone);
         if (M1.find())
         {
@@ -174,7 +174,7 @@ public class User {
 
     public void setEmail(String anEmail) {
         Pattern Email = Pattern.compile("^[\\w-]+(\\.[\\w-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
-        Matcher mailAddress = Email.matcher(email);
+        Matcher mailAddress = Email.matcher(anEmail);
         if(mailAddress.find()){
             this.email = anEmail;
         }else{
